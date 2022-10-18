@@ -8,14 +8,14 @@ The goal of this exercise is to develop a `Grocery Shop` smart contract. This `G
 -   Egg (GroceryType: 2)
 -   Jam (GroceryType: 3)
 
-This shop maintains a cash register which keeps record of all groceries.
+This shop maintains a cash register which keeps records of all groceries.
 
 Complete this contract with following specifications for each function
 
 -   constructor(uint256 breadCount, uint256 eggCount, uint256 jamCount)
 
     -   Takes initial number of items of each grocery in order - Bread, Egg and Jam, and stores them.
-    -   Should save the sender of this transaction as **owner**;
+    -   Should save the sender of this transaction as **owner**.
 
 -   add
 
@@ -43,3 +43,4 @@ Complete this contract with following specifications for each function
 
 -   Add proper checks for invalid inputs and error cases.
 -   Use modifier where appropriate.
+-   User enums and structs where appropriate.

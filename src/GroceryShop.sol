@@ -20,6 +20,11 @@ contract GroceryShop {
     mapping(uint256 => Purchase) public cashRegister;
     mapping(GroceryType => uint256) itemCount;
 
+    modifier onlyOwner {
+        require(msg.sender == owner, "Not owner!");
+        _;
+    }
+
     address public owner;
     uint256 public lastPurchaseId;
 
@@ -35,7 +40,7 @@ contract GroceryShop {
         owner = msg.sender;
     }
 
-    function add(GroceryType groceryType, uint256 units) external {
+    function add(GroceryType groceryType, uint256 units) onlyOwner external {
         require(msg.sender == owner, "Not owner!");
         itemCount[groceryType] += units;
 
