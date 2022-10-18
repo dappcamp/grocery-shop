@@ -27,7 +27,7 @@ Complete this contract with following specifications for each function
 
     -   This function takes in `Grocery Type` and `Number of units to buy` as parameters.
     -   For simplicity, the price of each unit in shop irrespective of its type is **0.01 ether**.
-    -   It should emit an event named `Bought` with parameters `Grocery Type` and `Number of units bought`.
+    -   It should emit an event named `Bought` with parameters `Purchase Id`, `Grocery Type` and `Number of units bought`. The `Purchase Id` in this case should start from **1** and increment sequentially on every purchase.
 
 -   withdraw
 
