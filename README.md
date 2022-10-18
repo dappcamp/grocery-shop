@@ -34,9 +34,27 @@ Complete this contract with following specifications for each function
     -   This function is only callable by owner.
     -   It should transfer the entire amount in contract to the owner.
 
-## Submission
+## Evaluation
 
--   Deploy this contract on Goerli testnet and submit the contract address.
+-   Clone this repo. Use the flag `--recurse-submodules` to clone the repo along with the submodules. You can use the following command after replacing the `CLONE_URL` with the clone url of your repo
+
+    ```
+    git clone --recurse-submodules CLONE_URL
+    ```
+
+-   Create a new branch with your name. You can use the following command
+
+    ```
+    git checkout -b my-name
+    ```
+
+-   Make changes to the `src/GroceryShop.sol` file. The tests in `test/GroceryShop.t.sol` should run successfully.
+
+-   Run Tests
+    ```
+    forge test
+    ```
+-   Create a pull request from your forked repo to main branch of original repo to run the github workflow.
 
 
 ## Note
