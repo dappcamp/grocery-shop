@@ -55,13 +55,20 @@ Complete this contract with following specifications for each function
     git checkout -b my-name
     ```
 
--   Paste the code from Remix to `src/GroceryShop.sol` file and commit it.
+-   Paste the code from Remix to `src/GroceryShop.sol` file.
+
+-   Replace `PASTE_YOUR_CONTRACT_ADDRESS_HERE` with your contract address at the end of this README file.
+
+-   Commit and push your changes.
 
 -   Create a pull request from your forked repo to main branch of original repo to run the github workflow.
-
 
 ## Note
 
 -   Add proper checks for invalid inputs and error cases.
 -   Use modifier where appropriate.
--   User enums and structs where appropriate.
+-   Use enums and structs where appropriate.
+
+## Contract Address
+
+PASTE_YOUR_CONTRACT_ADDRESS_HERE
