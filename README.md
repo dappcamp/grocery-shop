@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal of this exercise is to develop a `Grocery Shop` smart contract. This `Grocery Shop` has 3 kinds of groceries
+The goal of this exercise is to develop a `Grocery Shop` smart contract, deploy it on **Goerli testnet** and also verify the contract on **Goerli Etherscan**. This `Grocery Shop` has 3 kinds of groceries
 
 -   Bread (GroceryType: 1)
 -   Egg (GroceryType: 2)
@@ -36,6 +36,13 @@ Complete this contract with following specifications for each function
 
 ## Evaluation
 
+-   Write the contract on `Remix` and test it for following scenarios manually
+    -   `add` function should not allow anyone other than owner.
+    -   `buy` should revert when invalid amount is passed.
+    -   Correct events should be emitted as mentioned in specifications.
+
+-   Deploy the contract on Goerli testnet through **Remix** and verify it [here](https://goerli.etherscan.io/verifyContract).
+
 -   Clone this repo. Use the flag `--recurse-submodules` to clone the repo along with the submodules. You can use the following command after replacing the `CLONE_URL` with the clone url of your repo
 
     ```
@@ -48,12 +55,8 @@ Complete this contract with following specifications for each function
     git checkout -b my-name
     ```
 
--   Make changes to the `src/GroceryShop.sol` file. The tests in `test/GroceryShop.t.sol` should run successfully.
+-   Paste the code from Remix to `src/GroceryShop.sol` file and commit it.
 
--   Run Tests
-    ```
-    forge test
-    ```
 -   Create a pull request from your forked repo to main branch of original repo to run the github workflow.
 
 
