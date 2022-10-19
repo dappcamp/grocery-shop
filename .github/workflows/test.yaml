@@ -30,6 +30,7 @@ jobs:
         run: |
           forge --version
           forge build --sizes
+          forge install foundry-rs/forge-std
         id: build
 
       - name: Run Forge tests
